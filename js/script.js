@@ -1,6 +1,6 @@
 // Task 1 ============================================
+const div1 = document.getElementById("div-1");
 document.getElementById("b-1").addEventListener("click", function () {
-  const div1 = document.getElementById("div-1");
   div1.style.width = "200px";
   div1.style.height = "90px";
   div1.textContent = `Width: ${div1.style.width}, Height: ${div1.style.height}`;
@@ -46,8 +46,8 @@ document.getElementById("btn-decrement").addEventListener("click", function () {
 });
 
 // Task 7 ============================================
+const blockColor = document.getElementById("block-color");
 document.getElementById("btn-color").addEventListener("click", function () {
-  const blockColor = document.getElementById("block-color");
   const newDiv = document.createElement("div");
   newDiv.className = "block-color__item";
   newDiv.style.backgroundColor = getRandomColor();
